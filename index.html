@@ -5,10 +5,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Tanmay Surte | AI Engineer</title>
-
-  
 </head>
 
 <body>
@@ -21,28 +18,101 @@
 
 ```
 <section class="hero">
-  <h1 class="title">AI Engineer Intern</h1>
-  <p class="subtitle">Agentic AI • Automation • LLM Systems</p>
-  <p class="tagline">
-    I build intelligent systems that automate real-world workflows.
-  </p>
+  <div class="hero-content">
+
+    <img src="/profile.jpg" alt="Tanmay Surte" class="profile-pic" />
+
+    <div class="hero-text">
+
+      <h1>Tanmay Surte</h1>
+
+      <h2>AI/ML Engineer • Building Intelligent Systems</h2>
+
+      <p class="hero-description">
+        AI/ML Engineer in training, actively seeking an internship.
+        Focused on building real-world AI systems and startup projects.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="/resume.pdf" target="_blank" class="btn">
+          Resume
+        </a>
+
+        <a href="https://github.com/Tanmay-Ts" target="_blank" class="btn-outline">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/tanmay-surte-9a26622a0/"
+           target="_blank"
+           class="btn-outline">
+          LinkedIn
+        </a>
+
+        <button id="skills-btn" class="btn-outline">
+          View Skills
+        </button>
+
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="projects">
-  <h2>Featured Projects</h2>
-
-  <div class="card">Project 1</div>
-  <div class="card">Project 2</div>
-  <div class="card">Project 3</div>
+  <h2 style="text-align:center;">Featured Projects</h2>
+  <div id="project-container"></div>
 </section>
 ```
 
   </main>
 
-  <!-- 🔥 THIS LINE LOADS ALL YOUR JAVASCRIPT -->
+  <!-- Skills Modal -->
+
+  <div id="skills-modal" class="modal">
+
+```
+<div class="modal-content">
+
+  <span id="close-modal" class="close-btn">&times;</span>
+
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">Machine Learning</div>
+    <div class="skill-card">Deep Learning</div>
+    <div class="skill-card">Feature Engineering</div>
+    <div class="skill-card">Model Evaluation</div>
+
+    <div class="skill-card">LLMs</div>
+    <div class="skill-card">Prompt Engineering</div>
+    <div class="skill-card">RAG Systems</div>
+    <div class="skill-card">Vector Databases</div>
+
+    <div class="skill-card">Agentic AI</div>
+    <div class="skill-card">LangChain</div>
+    <div class="skill-card">Multi-Agent Systems</div>
+    <div class="skill-card">Automation Pipelines</div>
+
+    <div class="skill-card">Python</div>
+    <div class="skill-card">PyTorch</div>
+    <div class="skill-card">TensorFlow</div>
+    <div class="skill-card">Pandas / NumPy</div>
+
+    <div class="skill-card">Git & GitHub</div>
+    <div class="skill-card">Docker</div>
+    <div class="skill-card">REST APIs</div>
+    <div class="skill-card">Web Scraping</div>
+
+  </div>
+
+</div>
+```
+
+  </div>
 
   <script type="module" src="/src/main.js"></script>
-
 
 </body>
 

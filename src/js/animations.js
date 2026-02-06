@@ -1,14 +1,23 @@
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import { gsap } from "gsap";
 
-gsap.from(".title", {
-  y: -100,
-  opacity: 0,
-  duration: 1.2
-});
+function revealOnScroll() {
+  const sections = document.querySelectorAll("section");
 
-gsap.from(".card", {
-  opacity: 0,
-  y: 80,
-  stagger: 0.3,
-  duration: 1.5
-});
+  sections.forEach(section => {
+    gsap.from(section, {
+      opacity: 0,
+      y: 80,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+      },
+    });
+  });
+}
+
+revealOnScroll();

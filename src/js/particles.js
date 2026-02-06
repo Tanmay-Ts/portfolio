@@ -8,7 +8,7 @@ async function initParticles() {
     id: "particles",
     options: {
       particles: {
-        number: { value: 60 },
+        number: { value: 35 },
         size: { value: 2 },
         move: { speed: 1 },
         opacity: { value: 0.4 }
